@@ -14,6 +14,21 @@ class Application extends CI_Controller {
     protected $data = array();      // parameters for view components
     protected $id;                  // identifier for our content
 
+    /*
+     * setQuoteData
+     * Assigns all the necessary fields to the data array
+     * for a quote that are used by the quote view
+     */
+    protected function setQuoteData($quote){
+        /* Original version
+        $this->data['mug'] = $quote['mug'];
+        $this->data['who'] = $quote['who'];
+        $this->data['what'] = $quote['what'];
+         */
+        // Refactored version
+        $this->data = array_merge($this->data, $quote);
+    }
+    
     /**
      * Constructor.
      * Establish view parameters & load common helpers
