@@ -32,7 +32,7 @@ class First extends Application {
     function zzz(){
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
         
-        // get the first quote and assign the members that are in the view to our
+        // get the  quote and assign the members that are in the view to our
         // data array
         $this->setQuoteData( $this->quotes->get(1));
 
@@ -42,7 +42,7 @@ class First extends Application {
     function gimme($id){
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
         
-        // get the first quote and assign the members that are in the view to our
+        // get the  quote and assign the members that are in the view to our
         // data array
         $this->setQuoteData( $this->quotes->get($id));
 

@@ -22,7 +22,7 @@ class Welcome extends Application {
     function index() {
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
         
-        // get the first quote and assign the members that are in the view to our
+        // get the last quote and assign the members that are in the view to our
         // data array
         $this->setQuoteData( $this->quotes->last());
 

@@ -21,7 +21,7 @@ class Bingo extends Application {
     function index() {
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
         
-        // get the first quote and assign the members that are in the view to our
+        // get the  quote and assign the members that are in the view to our
         // data array
         $this->setQuoteData( $this->quotes->get(5));
 
@@ -31,7 +31,7 @@ class Bingo extends Application {
     function wisdom() {
         $this->data['pagebody'] = 'justone';    // this is the view we want shown
         
-        // get the first quote and assign the members that are in the view to our
+        // get the  quote and assign the members that are in the view to our
         // data array
         $this->setQuoteData( $this->quotes->get(6));
 
