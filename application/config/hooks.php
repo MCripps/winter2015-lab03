@@ -10,6 +10,11 @@
 |
 */
 
+$hook['post_controller']= array( 
+    'filepath' => 'hooks',
+    'filename' => 'DisplayOverrideHook.php',
+    'class' => 'DisplayOverrideHook', 
+    'function' => 'display_override');
 
 
 /* End of file hooks.php */
